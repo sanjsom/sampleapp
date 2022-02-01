@@ -1,6 +1,6 @@
 const express = require('express')
 
-var port = process.env.Port || 5000
+
 var app = express()
 
 app.get("/", function(req, res){
@@ -13,3 +13,5 @@ app.get("/about", function(req, res){
 app.listen(port, function(err){
         console.log("server started at port ",port)
     })
+var port_number = server.listen(process.env.PORT || 3000);
+app.listen(port_number);
