@@ -1,4 +1,4 @@
-const express = require('express')
+const express = require("express")
 
 var port = process.env.Port || 5000
 var app = express()
@@ -10,6 +10,7 @@ app.get("/", function(req, res){
 app.get("/about", function(req, res){
         res.send("About us page")
     })
+
 app.listen(port, function(err){
         console.log("server started at port ",port)
     })
