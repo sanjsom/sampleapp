@@ -1,10 +1,10 @@
 const express = require("express")
 var app = express()
 
-var port =  process.env.Port || 3010
+var port =  process.env.Port || 3000
     
 app.get("/", function(req, res){
-        res.send("Welcome pages")
+        res.send("Welcome page")
 })
 app.get("/about", function(req, res){
         res.send("About us page")
